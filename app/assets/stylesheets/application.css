@@ -1,0 +1,60 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+html {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+body {
+    background-color: black;
+}
+text {
+    color: white;
+}
+.main {
+    margin: auto;
+    /*position: relative;*/
+    float: left;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 70%;
+    /*min-height: 600px;*/
+    /*height: 250px;*/
+}
+.boxed_options {
+    border-radius: 25px;
+    border: 2px solid blueviolet;
+    padding: 20px;
+}
+.sidebar {
+    /*margin: auto;*/
+    float: left;
+    background-color: lightgrey;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    max-width: 20%;
+    /*min-height: 90%;*/
+    top: -200px; /*UUUUMMMMMMMMMM*/
+}
+.sidebar, .main {
+    display: inline-block;
+    margin: auto;
+    min-height: 600px;
+}
+h2 { /*may change to some title/topics div bar*/
+    position: sticky;
+}

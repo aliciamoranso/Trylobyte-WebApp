@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>CSLearnTool</title>
+<body>
+<div class="sidebar">[Sidebar Content]</div>
+<div class="main">
+  <h1>[SITE NAME]</h1>
+  <h2>LESSONS</h2>
+  <% @subtopics.each do |s| %>
+    <div class="boxed_options">
+      <%= link_to s.title, subtopic_path(s) %>
+    </div>
+    <br>
+  <% end %>
+</div>
+</body>
+</html>
