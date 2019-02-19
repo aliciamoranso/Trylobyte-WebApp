@@ -2,14 +2,14 @@
 <html>
 <title>CSLearnTool</title>
 <body>
-<div class="main">
+<span class="sidebar">Contents<br><%=link_to "Home", welcome_index_path %></span>
+<span class="main">
   <h1>[SITE NAME]</h1>
-  <h2>[PAGE TITLE?]</h2>
+  <h2>Home</h2>
   <div class="content">[Page Content]</div>
-  <div class="sidebar">[Sidebar Content]</div>
-  <div><iframe sandbox="allow-popups allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation" src="https://www.khanacademy.org/computer-programming/program/4863148342902784/embedded?embed=yes&amp;author=no&amp;editor=no&amp;buttons=no&amp;settings=%7B%7D" style="height:140px;width:100%" class="perseus-scratchpad" allowfullscreen=""></iframe></div>
-  <div><iframe sandbox="allow-popups allow-same-origin allow-scripts allow-top-navigation" src="https://www.khanacademy.org/computer-programming/program/6095780544249856/embedded?embed=yes&amp;author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D"></iframe></div>
-  <button type="button" onclick="alert('Hello world!')">A Button</button>
-</div>
+  <%= link_to topics_path do %>
+    <div class="boxed_options">Topics</div>
+  <% end %>
+</span>
 </body>
 </html>

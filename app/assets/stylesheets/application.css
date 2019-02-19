@@ -14,47 +14,79 @@
  *= require_self
  */
 html {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Trebuchet MS", cursive, sans-serif;
+    color: indigo;
 }
 body {
-    background-color: black;
+    background-color: #2E2F30;
+    margin: 20px;
 }
-text {
-    color: white;
-}
+/*text {*/
+    /*color: white;*/
+/*}*/
 .main {
-    margin: auto;
+    margin-top: 50%;
+    margin-bottom: 50%;
     /*position: relative;*/
     float: left;
     background-color: white;
-    border-radius: 25px;
-    border: 2px solid #73AD21;
+    border-radius: 0px 25px 25px 0px;
+    border: 8px solid #ad2f57;
     padding: 20px;
-    width: 70%;
+    width: 80%;
     /*min-height: 600px;*/
     /*height: 250px;*/
 }
 .boxed_options {
     border-radius: 25px;
-    border: 2px solid blueviolet;
+    border: 2px solid #e21a1d;
     padding: 20px;
 }
 .sidebar {
     /*margin: auto;*/
     float: left;
     background-color: lightgrey;
-    border-radius: 25px;
-    border: 2px solid #73AD21;
+    border-radius: 25px 0px 0px 25px;
+    border: 8px solid #e35c10;
     padding: 20px;
     max-width: 20%;
     /*min-height: 90%;*/
-    top: -200px; /*UUUUMMMMMMMMMM*/
+    top: -200px; /*ME: UUUUMMMMMMMMMM*/
 }
 .sidebar, .main {
     display: inline-block;
     margin: auto;
     min-height: 600px;
 }
-h2 { /*may change to some title/topics div bar*/
-    position: sticky;
+h2 { /*ME: may change to some title/topics div bar*/
+    border-bottom: 3px solid #ad2f57;
+    vertical-align: baseline;
+}
+img {
+    height: 100px;
+}
+.content {
+    height: auto;
+    width: 70%;
+}
+.boxed_options {
+    border: 5px dotted #f45d10;
+    border-radius: 0px 10px 0px 10px;
+    margin: 5px;
+    padding: 6px;
+    background: #58595a;
+    display: inline-block;
+    font-size: x-large;
+    color: white;
+}
+a {
+    text-decoration: none;
+    padding: 5px;
+    /*color: white;*/
+}
+.boxed_options a {
+
+}
+a:hover {
+    filter: invert(100%);
 }

@@ -2,15 +2,17 @@
 <html>
 <title>CSLearnTool</title>
 <body>
-<span class="sidebar">[Sidebar Content]</span>
+<span class="sidebar">Contents<br><%=link_to "Home", welcome_index_path %></span>
 <span class="main">
   <h1>[SITE NAME]</h1>
-  <h2>TOPICS</h2>
+  <h2>Topics</h2>
   <% @topics.each do |t| %>
+    <%= link_to topic_path(t) do%>
     <div class="boxed_options">
-      <%= image_tag t.image %>
-      <%= link_to t.title, topic_path(t) %>
+      <%#= image_tag t.image %>
+      <%= t.title %>
     </div>
+    <% end %>
     <br>
   <% end %>
 </span>
