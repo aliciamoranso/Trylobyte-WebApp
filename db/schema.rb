@@ -15,8 +15,12 @@ ActiveRecord::Schema.define(version: 20190203134120) do
   create_table "subtopics", force: :cascade do |t|
     t.integer "topic_id"
     t.string "title"
+    t.string "intro"
     t.string "image"
     t.string "game"
+    t.string "main_content"
+    t.string "test"
+    t.string "summary"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["topic_id"], name: "index_subtopics_on_topic_id"

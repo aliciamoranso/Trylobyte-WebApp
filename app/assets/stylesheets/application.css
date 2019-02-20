@@ -17,24 +17,29 @@ html {
     font-family: "Trebuchet MS", cursive, sans-serif;
     color: indigo;
 }
+.page_wrap {
+    margin: 0px;
+    padding: 0px;
+    min-width: 900px;
+    max-width: 1500px;
+    display: table;
+}
 body {
     background-color: #2E2F30;
     margin: 20px;
 }
-/*text {*/
-    /*color: white;*/
-/*}*/
 .main {
     margin-top: 50%;
     margin-bottom: 50%;
     /*position: relative;*/
-    float: left;
     background-color: white;
     border-radius: 0px 25px 25px 0px;
     border: 8px solid #ad2f57;
     padding: 20px;
-    width: 80%;
-    /*min-height: 600px;*/
+    max-width: 80%;
+    min-width: 80vw;
+    min-height: 500px;
+    display: table-cell;
     /*height: 250px;*/
 }
 .boxed_options {
@@ -43,18 +48,17 @@ body {
     padding: 20px;
 }
 .sidebar {
-    /*margin: auto;*/
-    float: left;
+    margin: 0px;
     background-color: lightgrey;
     border-radius: 25px 0px 0px 25px;
     border: 8px solid #e35c10;
     padding: 20px;
     max-width: 20%;
-    /*min-height: 90%;*/
-    top: -200px; /*ME: UUUUMMMMMMMMMM*/
+    display: table-cell;
+    /*top: -200px; !*ME: UUUUMMMMMMMMMM*!*/
 }
 .sidebar, .main {
-    display: inline-block;
+    /*display: inline-block;*/
     margin: auto;
     min-height: 600px;
 }
@@ -68,6 +72,8 @@ img {
 .content {
     height: auto;
     width: 70%;
+    padding: 10px 10px 10px 50px;
+    /*margin: 10px;*/
 }
 .boxed_options {
     border: 5px dotted #f45d10;
@@ -82,10 +88,9 @@ img {
 a {
     text-decoration: none;
     padding: 5px;
-    /*color: white;*/
 }
-.boxed_options a {
-
+p {
+    color: black;
 }
 a:hover {
     filter: invert(100%);
