@@ -5,19 +5,21 @@
 <div class="page_wrap">
 <div class="sidebar">Contents<br><%=link_to "Home", welcome_index_path %></div>
 <div class="main">
-  <h1>[SITE NAME]</h1>
-  <h2><%= link_to "Topics", topics_path %> >> <%= link_to @topic.title, topic_path(@topic) %> >> <%= @subtopic.title %></h2>
+  <div class="headings_bar">
+    <h1>[SITE NAME]</h1>
+    <h2><%= link_to "Topics", topics_path %> >> <%= link_to @topic.title, topic_path(@topic) %> >> <%= @subtopic.title %></h2>
+  </div>
   <div class="content">
-  <%= @subtopic.intro.html_safe %>
-  <br>
-  <iframe height="400" width="600" src=<%= @subtopic.game %>></iframe>
-  <br>
-  <%= @subtopic.main_content.html_safe %>
-  <br>
-  <%= @subtopic.test.html_safe %>
-  <br>
-  <h3>Summary</h3>
-  <%= @subtopic.summary.html_safe %>
+    <%= @subtopic.intro.html_safe %>
+    <br>
+    <iframe height="400" width="600" scrolling="no" src=<%= @subtopic.game %> ></iframe>
+    <br>
+    <%= @subtopic.main_content.html_safe %>
+    <br>
+    <iframe height="400" width="600" scrolling="no" src=<%= @subtopic.test %> ></iframe>
+    <br>
+    <h3>Summary</h3>
+    <%= @subtopic.summary.html_safe %>
   </div>
 </div>
 </div>

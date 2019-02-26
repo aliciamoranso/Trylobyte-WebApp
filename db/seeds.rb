@@ -9,7 +9,7 @@
 t1 = Topic.create(title: 'Algorithms')
 sub1 = Subtopic.create(title: 'Introduction',
                        intro: '<p>What is an algorithm?  A definition of an algorithm is
-"<b>a sequence of logical instructions for carrying out a task.</b>".</p>
+"<b>a sequence of logical instructions for carrying out a task</b>".</p>
 <p>But what does that mean? Firstly, let’s break that sentence down:
 <ol><li><b>A sequence of instructions</b> means a set of step-by-step actions.</li>
 <li>Here <b>logical instructions</b> means instructions in a correct order and that make sense.</li>
@@ -30,7 +30,7 @@ loop forever and the person will never stop brushing their teeth!</p>
 teeth!  But a computer cannot think for itself.  It relies upon a set of very clear and correctly ordered instructions,
 know as an algorithm, to be able to carry out a task.  If given wrong instructions, a computer will still carry them
 out.</p>',
-                       test: '', summary: '')
+                       test: 'https://scratch.mit.edu/projects/288988708/embed', summary: '')
 sub2 = Subtopic.create(title: 'Representation of Algorithms', intro: '', image: '/../app/assets/images/logo.jpg',
                        game: 'https://scratch.mit.edu/projects/193320457/embed',
                        main_content: '', test: '', summary: '')
