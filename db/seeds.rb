@@ -18,7 +18,7 @@ how to reach an end goal or aim.</li></ol></p>
 <p>Have a look at the animation below to understand algorithms better.</p>',
                        image: '/../app/assets/images/logo.jpg',
                        game: 'https://scratch.mit.edu/projects/285775202/embed',
-                       main_content: '<p>Algorithms define which actions in what order.
+                       main_content: '<p>Algorithms define <b>which actions in what order</b>.
 Order of actions/instructions is very important in algorithms. Notice that if the order of these actions is muddled,
 it is not the same algorithm anymore.  For example:
 <ol><li>Pick up the toothbrush</li>
@@ -30,7 +30,11 @@ loop forever and the person will never stop brushing their teeth!</p>
 teeth!  But a computer cannot think for itself.  It relies upon a set of very <b>clear</b> and <b>correctly ordered
 instructions</b>, known as an algorithm, to be able to carry out a task.  If given wrong instructions, a computer will
 try to carry out these wrong steps.</p>',
-                       test: 'https://scratch.mit.edu/projects/288988708/embed', summary: '')
+                       test: 'https://scratch.mit.edu/projects/288988708/embed', summary: '<p>In this section, we have
+<b>defined what an algorithm is</b> and have learnt:<ol><li>That algorithms can be found everywhere in everyday
+life.</li><li>The importance of the <b>order of instructions</b> in an algorithm.</li><li>The importance of
+<b>clear instructions</b> in an algorithm for computers.</li></ol></p><p>You have completed the Introduction
+to Algorithms section!  Try out the other lessons available in this topic.</p>')
 sub2 = Subtopic.create(title: 'Representation of Algorithms', intro: '', image: '/../app/assets/images/logo.jpg',
                        game: '',
                        main_content: '', test: '', summary: '')

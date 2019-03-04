@@ -61,6 +61,10 @@ body {
     margin: auto;
     min-height: 600px;
 }
+h1, h1 a {
+    color: indigo;
+    /*text-shadow: 2px 2px #f45d10;*/
+}
 h2 { /*ME: may change to some title/topics div bar*/
     border-bottom: 3px solid #ad2f57;
     vertical-align: baseline;
