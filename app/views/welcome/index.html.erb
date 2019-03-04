@@ -4,12 +4,15 @@
 <body>
 <span class="sidebar">Contents<br><%=link_to "Home", welcome_index_path %></span>
 <span class="main">
-  <h1>[SITE NAME]</h1>
+  <h1>Trylobyte</h1>
   <h2>Home</h2>
-  <div class="content">[Page Content]</div>
-  <%= link_to topics_path do %>
-    <div class="boxed_options">Topics</div>
-  <% end %>
+  <div class="content">Welcome to Trylobyte!  Click on the topics button below to start looking for Computing topics to
+    learn about.
+    <br><br>
+    <%= link_to topics_path do %>
+      <div class="boxed_options">Topics</div>
+    <% end %>
+  </div>
 </span>
 </body>
 </html>
