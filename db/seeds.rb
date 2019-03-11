@@ -35,20 +35,59 @@ try to carry out these wrong steps.</p>',
 life.</li><li>The importance of the <b>order of instructions</b> in an algorithm.</li><li>The importance of
 <b>clear instructions</b> in an algorithm for computers.</li></ol></p><p>You have completed the Introduction
 to Algorithms section!  Try out the other lessons available in this topic.</p>')
-sub2 = Subtopic.create(title: 'Representation of Algorithms', intro: '', image: '/../app/assets/images/logo.jpg',
-                       game: '',
+sub2 = Subtopic.create(title: 'Searching Algorithms', intro: '<p>What is a searching algorithm? <br>The basic aim
+of a searching algorithm is to filter through a list of items/elements to find a particular item in the list
+(or to tell us if the item is not there).</p><p>It is important to note here that the word <b>items</b> and the word
+<b>elements</b> refer to the same things.  They are just the things contained in a list.  So the elements/items in a
+shopping list might be: eggs, lettuce, bread, grapes, etc.  And the elements/items of a school class register would
+be the names of the pupils.  And the elements of an integer number line from 0 to 10 would be the integer numbers:
+0, 1, 2, …, 9, 10.  </p><p>Have a look at the game below.  The game first chooses a number in the range 1 to 16.
+It is your task to guess its chosen number.  When you select a number (by clicking it), the game will tell you
+whether this number is greater than, less than or equal to its chosen number.</p><p>There are different approaches
+to this task.  See if you can guess the number with as few clicks as possible each round!</p>',
+                       image: '/../app/assets/images/logo.jpg',
+                       game: 'https://www.khanacademy.org/computer-programming/program/4863148342902784/embedded?
+embed=yes&author=no&editor=no&width=688&buttons=no&settings=%7B%7D',
+                       main_content: '<p>The two searching algorithms we will look at in the next lessons are
+<b>linear search</b> and <b>binary search</b>.</p><p>So why do we need searching algorithms?<br>Searching
+algorithms are hugely important in computing.  As humans we might find it easy to look through a list and say whether
+or not an item is in a short list very fast.  However, we find it much more difficult with a list of hundreds,
+thousands, and millions of items.  With the right algorithm, a computer can search through <b>huge amounts of
+data</b> very <b>fast</b> and <b>accurately</b>, without getting tired or bored!</p>',
+                       test: '', summary: 'Searching algorithms are algorithms that <b>filter through</b> a list of
+elements to <b>find a particular item</b>.  These algorithms are particularly useful in computing for looking through
+<b>huge amounts of data accurately</b> and much <b>faster</b> than any human can.')
+sub3 = Subtopic.create(title: 'Linear Search', intro: '<p><b>Linear or sequential or serial search</b> are all the
+same thing.  They refer to the most basic searching algorithm which simply checks each item from the first item to
+the last to find the correct one.  Starting with the first item in the list as the ‘current element’, the steps of this
+algorithm are:<ol><li>Is the current element equal to the chosen element? If yes then output this number and go
+to step 3.  If no, go to step 2.</li><li>Make the next element in the list the ‘current element’.  Go to step 1.</li>
+<li>Finish the algorithm.</li></ol>Have a go with this algorithm on the number guessing game below to understand
+it better.</p>',
+                       image: '/../app/assets/images/logo.jpg',
+                       game: 'https://www.khanacademy.org/computer-programming/program/4863148342902784/embedded?
+embed=yes&author=no&editor=no&width=688&buttons=no&settings=%7B%7D',
+                       main_content: '<p>For this type of search algorithm, the order of the items doesn’t matter.
+Even if the numbers 1 to 16 were in a completely different order, we would still apply the same linear search method
+and would still arrive at the same correct answer, just maybe after a different number of iterations through the
+algorithm.</p><p>The major problem with linear search is that it is quite a slow algorithm compared to others once
+the data set gets bigger.  When the data set is big, the linear search algorithm still requires the computer to check
+every element and this takes time.  Even computers need time to complete actions and the more iterations it has to
+make through the algorithm to find the solution, the more time it takes to complete.</p><p>Look at the next task.
+Does a linear search seem like an efficient method for searching for the computer’s number now?</p>
+<iframe height="400" width="600" scrolling="no" src=”https://www.khanacademy.org/computer-programming/program
+/4869717459730432/embedded?embed=yes&amp;author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D” >
+</iframe>',
+                       test: '', summary: '<p>Linear search is a basic way to find an element in a
+data set.  Its advantage is that it does not require the data set it is searching to be sorted/ordered.  Its
+disadvantage is that it rather inefficient as it may have to check every single element of the data set before it
+finds the correct answer.</p>')
+sub4 = Subtopic.create(title: 'Binary Search', intro: '', image: '/../app/assets/images/logo.jpg',
+                       game: 'https://www.khanacademy.org/computer-programming/program/4869717459730432/
+embedded?embed=yes&amp;author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D',
                        main_content: '', test: '', summary: '')
-sub3 = Subtopic.create(title: 'Searching Algorithms', intro: '<p>Searching Algorithms are hugely important in
-computing.</p><p>The basic aim of a searching algorithm is to filter through a <b>sorted/ordered list</b> and look for
-a particular item and tell us whether or not the item is in the list.</p><p>As humans we might find it easy
-to look through a short list very fast and say whether or not a item is in the list.  However, we find this much
-more difficult with a list of hundreds, thousands, or millions of items.  With the right algorithm though, a
-computer can do this very fast and without getting tired or bored!</p>
-', image: '/../app/assets/images/logo.jpg',
-                       game: '',
-                       main_content: '', test: '', summary: '')
-sub4 = Subtopic.create(title: 'Sorting Algorithms', intro: '', image: '/../app/assets/images/logo.jpg',
+sub5 = Subtopic.create(title: 'Sorting Algorithms', intro: '', image: '/../app/assets/images/logo.jpg',
                        game: '',
                        main_content: '', test: '', summary: '')
 
-t1.subtopics << [sub1, sub2, sub3, sub4]
+t1.subtopics << [sub1, sub2, sub3, sub4, sub5]
