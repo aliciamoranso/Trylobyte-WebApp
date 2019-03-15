@@ -15,9 +15,10 @@ sub1 = Subtopic.create(title: 'Introduction to Algorithms',
 <li>Here <b>logical instructions</b> means instructions in a correct order and that make sense.</li>
 <li>The point of an algorithm is to say how to <b>carry out a task</b> which can equally be worded as
 how to reach an end goal or aim.</li></ol></p>
-<p>Have a look at the animation below to understand algorithms better.</p>',
+<br><h3>Try the game!</h3><p>Have a look at the animation below to understand algorithms better.</p>',
                        image: '/../app/assets/images/logo.jpg',
-                       game: 'https://scratch.mit.edu/projects/285775202/embed',
+                       game_class: 'id="scratch"',
+                       game: '<iframe height="400" width="600" scrolling="no" src="https://scratch.mit.edu/projects/285775202/embed" ></iframe>',
                        main_content: '<p>Algorithms define <b>which actions in what order</b>.
 Order of actions/instructions is very important in algorithms. Notice that if the order of these actions is muddled,
 it is not the same algorithm anymore.  For example:
@@ -41,13 +42,17 @@ of a searching algorithm is to filter through a list of items/elements to find a
 <b>elements</b> refer to the same things.  They are just the things contained in a list.  So the elements/items in a
 shopping list might be: eggs, lettuce, bread, grapes, etc.  And the elements/items of a school class register would
 be the names of the pupils.  And the elements of an integer number line from 0 to 10 would be the integer numbers:
-0, 1, 2, …, 9, 10.  </p><p>Have a look at the game below.  The game first chooses a number in the range 1 to 16.
+0, 1, 2, …, 9, 10.  </p><br><h3>Try the game!</h3><p>Have a look at the game below.  The game first chooses a number in the range 1 to 16.
 It is your task to guess its chosen number.  When you select a number (by clicking it), the game will tell you
 whether this number is greater than, less than or equal to its chosen number.</p><p>There are different approaches
 to this task.  See if you can guess the number with as few clicks as possible each round!</p>',
                        image: '/../app/assets/images/logo.jpg',
-                       game: 'https://www.khanacademy.org/computer-programming/program/4863148342902784/embedded?
-embed=yes&author=no&editor=no&width=688&buttons=no&settings=%7B%7D',
+                       game_class: 'id="singlenumline"',
+                       game: '<iframe scrolling="no"
+sandbox="allow-popups allow-same-origin allow-scripts allow-top-navigation"
+src="https://www.khanacademy.org/computer-programming/program/4863148342902784/embedded?embed=yes&amp;author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D"
+class="perseus-scratchpad" allow="fullscreen"
+style="height: 500px; width: 690px; position: absolute; left: -5px; top: -5px;"></iframe>',
                        main_content: '<p>The two searching algorithms we will look at in the next lessons are
 <b>linear search</b> and <b>binary search</b>.</p><p>So why do we need searching algorithms?<br>Searching
 algorithms are hugely important in computing.  As humans we might find it easy to look through a list and say whether
@@ -65,8 +70,10 @@ to step 3.  If no, go to step 2.</li><li>Make the next element in the list the �
 <li>Finish the algorithm.</li></ol>Have a go with this algorithm on the number guessing game below to understand
 it better.</p>',
                        image: '/../app/assets/images/logo.jpg',
-                       game: 'https://www.khanacademy.org/computer-programming/program/4863148342902784/embedded?
-embed=yes&author=no&editor=no&width=688&buttons=no&settings=%7B%7D',
+                       game_class: '',
+                       game: '<iframe height="400" width="600" scrolling="no"
+src="https://www.khanacademy.org/computer-programming/program/4863148342902784/embedded?
+embed=yes&author=no&editor=no&width=688&buttons=no&settings=%7B%7D" ></iframe>',
                        main_content: '<p>For this type of search algorithm, the order of the items doesn’t matter.
 Even if the numbers 1 to 16 were in a completely different order, we would still apply the same linear search method
 and would still arrive at the same correct answer, just maybe after a different number of iterations through the
@@ -83,10 +90,13 @@ data set.  Its advantage is that it does not require the data set it is searchin
 disadvantage is that it rather inefficient as it may have to check every single element of the data set before it
 finds the correct answer.</p>')
 sub4 = Subtopic.create(title: 'Binary Search', intro: '', image: '/../app/assets/images/logo.jpg',
-                       game: 'https://www.khanacademy.org/computer-programming/program/4869717459730432/
-embedded?embed=yes&amp;author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D',
+                       game_class: '',
+                       game: '<iframe height="400" width="600" scrolling="no"
+src="https://www.khanacademy.org/computer-programming/program/4869717459730432/
+embedded?embed=yes&amp;author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D"></iframe>',
                        main_content: '', test: '', summary: '')
 sub5 = Subtopic.create(title: 'Sorting Algorithms', intro: '', image: '/../app/assets/images/logo.jpg',
+                       game_class: '',
                        game: '',
                        main_content: '', test: '', summary: '')
 

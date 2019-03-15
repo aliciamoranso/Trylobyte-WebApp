@@ -13,7 +13,9 @@
     <h3><%= @subtopic.title %></h3>
     <%= @subtopic.intro.html_safe %>
     <br>
-    <iframe height="400" width="600" scrolling="no" src=<%= @subtopic.game %> ></iframe>
+    <div class="game_normal" <%= @subtopic.game_class.html_safe %>>
+      <%= @subtopic.game.html_safe %>
+    </div>
     <br>
     <%= @subtopic.main_content.html_safe %>
     <br>

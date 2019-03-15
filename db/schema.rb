@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20190203134120) do
     t.string "title"
     t.string "intro"
     t.string "image"
+    t.string "game_class"
     t.string "game"
     t.string "main_content"
     t.string "test"
