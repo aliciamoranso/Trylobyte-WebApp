@@ -45,21 +45,24 @@ be the names of the pupils.  And the elements of an integer number line from 0 t
 0, 1, 2, …, 9, 10.  </p><br><h3>Try the game!</h3><p>Have a look at the game below.  The game first chooses a number in the range 1 to 16.
 It is your task to guess its chosen number.  When you select a number (by clicking it), the game will tell you
 whether this number is greater than, less than or equal to its chosen number.</p><p>There are different approaches
-to this task.  See if you can guess the number with as few clicks as possible each round!</p>',
+to this task.  See if you can reach the computer\'s chosen number with as few clicks as possible each round!</p>',
                        image: '/../app/assets/images/logo.jpg',
                        game_class: 'id="singlenumline"',
                        game: '<iframe scrolling="no"
 sandbox="allow-popups allow-same-origin allow-scripts allow-top-navigation"
-src="https://www.khanacademy.org/computer-programming/program/4863148342902784/embedded?embed=yes&amp;author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D"
-class="perseus-scratchpad" allow="fullscreen"
+src="https://www.khanacademy.org/computer-programming/program/4863148342902784/embedded?embed=yes&amp;author=no&amp;
+editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D" class="perseus-scratchpad" allow="fullscreen"
 style="height: 500px; width: 690px; position: absolute; left: -5px; top: -5px;"></iframe>',
-                       main_content: '<p>The two searching algorithms we will look at in the next lessons are
-<b>linear search</b> and <b>binary search</b>.</p><p>So why do we need searching algorithms?<br>Searching
-algorithms are hugely important in computing.  As humans we might find it easy to look through a list and say whether
-or not an item is in a short list very fast.  However, we find it much more difficult with a list of hundreds,
-thousands, and millions of items.  With the right algorithm, a computer can search through <b>huge amounts of
-data</b> very <b>fast</b> and <b>accurately</b>, without getting tired or bored!</p>',
-                       test: '', summary: 'Searching algorithms are algorithms that <b>filter through</b> a list of
+                       main_content: '<p>The two different searching algorithms we will look at in the next lessons are
+<b>linear search</b> and <b>binary search</b>.  Like all correct searching algorithms, if they are given an ordered
+list of items and an item to find within it, they will always find it correctly.  If the item is not there, the program
+will tell the user that the item is not in the list.</p><p>So why do we need searching algorithms?<br>Searching
+algorithms are hugely important in computing.  As humans we might find it easy to look through a short list and say
+whether or not an item is in the list very fast.  However, we find it much more difficult with a list of hundreds,
+thousands, or millions of items.  With the right algorithm, a computer can search through <b>huge amounts of
+data</b> <b>accurately</b> and much <b>faster</b> than humans can without getting tired or bored!</p>',
+                       test: 'https://scratch.mit.edu/projects/294378381/embed',
+                       summary: 'Searching algorithms are algorithms that <b>filter through</b> a list of
 elements to <b>find a particular item</b>.  These algorithms are particularly useful in computing for looking through
 <b>huge amounts of data accurately</b> and much <b>faster</b> than any human can.')
 sub3 = Subtopic.create(title: 'Linear Search', intro: '<p><b>Linear or sequential or serial search</b> are all the
@@ -70,34 +73,66 @@ to step 3.  If no, go to step 2.</li><li>Make the next element in the list the �
 <li>Finish the algorithm.</li></ol>Have a go with this algorithm on the number guessing game below to understand
 it better.</p>',
                        image: '/../app/assets/images/logo.jpg',
-                       game_class: '',
-                       game: '<iframe height="400" width="600" scrolling="no"
-src="https://www.khanacademy.org/computer-programming/program/4863148342902784/embedded?
-embed=yes&author=no&editor=no&width=688&buttons=no&settings=%7B%7D" ></iframe>',
+                       game_class: 'id="singlenumline"',
+                       game: '<iframe scrolling="no"
+sandbox="allow-popups allow-same-origin allow-scripts allow-top-navigation"
+src="https://www.khanacademy.org/computer-programming/program/4863148342902784/embedded?embed=yes&amp;author=no&amp;
+editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D" class="perseus-scratchpad" allow="fullscreen"
+style="height: 500px; width: 690px; position: absolute; left: -5px; top: -5px;"></iframe>',
                        main_content: '<p>For this type of search algorithm, the order of the items doesn’t matter.
 Even if the numbers 1 to 16 were in a completely different order, we would still apply the same linear search method
 and would still arrive at the same correct answer, just maybe after a different number of iterations through the
-algorithm.</p><p>The major problem with linear search is that it is quite a slow algorithm compared to others once
-the data set gets bigger.  When the data set is big, the linear search algorithm still requires the computer to check
-every element and this takes time.  Even computers need time to complete actions and the more iterations it has to
-make through the algorithm to find the solution, the more time it takes to complete.</p><p>Look at the next task.
-Does a linear search seem like an efficient method for searching for the computer’s number now?</p>
-<iframe height="400" width="600" scrolling="no" src=”https://www.khanacademy.org/computer-programming/program
-/4869717459730432/embedded?embed=yes&amp;author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D” >
-</iframe>',
+algorithm.</p><p>The advantage of linear search is that the items to be searched to not need to be in a sorted/ordered
+list whereas this is a requirement for many search algorithms.</p>
+<p>The major problem with linear search is that it is quite a slow algorithm compared to others once
+the data set (the number of items) gets bigger.  When the data set is big, the linear search algorithm still requires
+the computer to check every element and this takes time.  Even computers need time to complete actions and the more
+iterations it has to make through the algorithm to find the solution, the more time it takes to complete.</p>
+<p>Look at the next task. It is the same guessing game as the last task but with many more numbers. Does a linear
+search seem like an efficient method for searching for the computer’s chosen number now?</p>
+<div class="game_normal" id="multiplenumlines">
+      <iframe scrolling="no" sandbox="allow-popups allow-same-origin allow-scripts allow-top-navigation"
+              src="https://www.khanacademy.org/computer-programming/program/6095780544249856/embedded?embed=yes&amp;
+              author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D" class="perseus-scratchpad"
+              allow="fullscreen" style="height: 700px; width: 690px; position: absolute; left: -5px; top: -5px;">
+      </iframe>
+    </div>',
                        test: '', summary: '<p>Linear search is a basic way to find an element in a
-data set.  Its advantage is that it does not require the data set it is searching to be sorted/ordered.  Its
-disadvantage is that it rather inefficient as it may have to check every single element of the data set before it
+data set.  Its advantage is that the data set it is searching <b>does not need to be sorted/ordered</b>.  Its
+disadvantage is that it rather <b>inefficient</b> as it may have to check every single element of the data set before it
 finds the correct answer.</p>')
-sub4 = Subtopic.create(title: 'Binary Search', intro: '', image: '/../app/assets/images/logo.jpg',
-                       game_class: '',
-                       game: '<iframe height="400" width="600" scrolling="no"
-src="https://www.khanacademy.org/computer-programming/program/4869717459730432/
-embedded?embed=yes&amp;author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D"></iframe>',
-                       main_content: '', test: '', summary: '')
+sub4 = Subtopic.create(title: 'Binary Search', intro: '<p>A binary search algorithm takes the data and <b>keeps
+dividing it in half </b>until it finds the item it is looking for.  Binary search is a much <b>faster</b> algorithm
+than linear search in terms of the guaranteed greatest number of steps you have to take.</p><p>In fact, with the linear
+search algorithm, if the correct answer is the last element in the list, the algorithm will have to check through check
+every single item in the list before it reaches the end one.  Binary search, however, uses its halving technique to
+find out which half of the remaining data is relevant, meaning it can skip out checking half the elements already by
+the first click!</p><p>The only drawback to a binary search approach is that the elements of the <b>list must already
+be sorted/ordered</b> before this method can be used.</p><br><h3>Try the game!</h3><p>In the game below, we are given
+extra information: not only whether or not the list item is the correct one but also whether this item is higher or
+lower in the list than the correct answer.  <b>Binary search</b> uses this extra information to decide which half of
+the list to ignore after each click. (This game automatically shows you which side to ignore after each click).</p>
+<p>The binary search algorithm is:
+<ol><li>First pick the middle not-ignored element. If is the correct number, go to step 2. Else if the correct number
+is higher than the clicked number, ignore this number and all lower ones. Else ignore this number and all higher ones.
+</li><li>Correct number found!</li></ol>Try out this algorithm on the 1 to 300 number line below.  You should now be
+able to always reach the correct answer in 9 or fewer clicks! </p>',
+                       image: '/../app/assets/images/logo.jpg',
+                       game_class: 'id="multiplenumlines"',
+                       game: '<iframe scrolling="no"
+sandbox="allow-popups allow-same-origin allow-scripts allow-top-navigation"
+src="https://www.khanacademy.org/computer-programming/program/6095780544249856/embedded?embed=yes&amp;author=no&amp;
+editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D" class="perseus-scratchpad"
+allow="fullscreen" style="height: 700px; width: 690px; position: absolute; left: -5px; top: -5px;"></iframe>',
+                       main_content: '', test: '', summary: '<p>Binary search is a <b>faster</b> algorithm than linear
+search in general.  Its drawback is that it needs the <b>data to already be sorted/ordered</b> before searching.</p>')
 sub5 = Subtopic.create(title: 'Sorting Algorithms', intro: '', image: '/../app/assets/images/logo.jpg',
                        game_class: '',
-                       game: '',
+                       game: '<iframe scrolling="no" sandbox="allow-popups allow-same-origin allow-scripts allow-top-navigation"
+              src="https://www.khanacademy.org/computer-programming/program/4869717459730432/embedded?embed=yes&amp;
+              author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D" class="perseus-scratchpad"
+              allow="fullscreen" style="height: 700px; width: 690px; position: absolute; left: -5px; top: -5px;">
+      </iframe>',
                        main_content: '', test: '', summary: '')
 
 t1.subtopics << [sub1, sub2, sub3, sub4, sub5]

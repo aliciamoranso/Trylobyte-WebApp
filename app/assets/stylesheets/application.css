@@ -117,6 +117,12 @@ a:hover {
     overflow: hidden;
     position: relative;
 }
+#multiplenumlines {
+    height: 400px;
+    width: 680px;
+    overflow: hidden;
+    position: relative;
+}
 #scratch {
     height: 400px;
     width: 603px;
