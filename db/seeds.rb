@@ -97,7 +97,8 @@ search seem like an efficient method for searching for the computer’s chosen n
               allow="fullscreen" style="height: 700px; width: 690px; position: absolute; left: -5px; top: -5px;">
       </iframe>
     </div>',
-                       test: '', summary: '<p>Linear search is a basic way to find an element in a
+                       test: 'https://scratch.mit.edu/projects/294482647/embed',
+                       summary: '<p>Linear search is a basic way to find an element in a
 data set.  Its advantage is that the data set it is searching <b>does not need to be sorted/ordered</b>.  Its
 disadvantage is that it rather <b>inefficient</b> as it may have to check every single element of the data set before it
 finds the correct answer.</p>')
@@ -124,7 +125,8 @@ sandbox="allow-popups allow-same-origin allow-scripts allow-top-navigation"
 src="https://www.khanacademy.org/computer-programming/program/6095780544249856/embedded?embed=yes&amp;author=no&amp;
 editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D" class="perseus-scratchpad"
 allow="fullscreen" style="height: 700px; width: 690px; position: absolute; left: -5px; top: -5px;"></iframe>',
-                       main_content: '', test: '', summary: '<p>Binary search is a <b>faster</b> algorithm than linear
+                       main_content: '', test: 'https://scratch.mit.edu/projects/294482647/embed',
+                       summary: '<p>Binary search is a <b>faster</b> algorithm than linear
 search in general.  Its drawback is that it needs the <b>data to already be sorted/ordered</b> before searching.</p>')
 # sub5 = Subtopic.create(title: 'Sorting Algorithms', intro: '', image: '/../app/assets/images/logo.jpg',
 #                        game_class: '',
