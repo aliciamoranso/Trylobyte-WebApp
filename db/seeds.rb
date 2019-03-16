@@ -126,13 +126,13 @@ editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D" class="perseus-scrat
 allow="fullscreen" style="height: 700px; width: 690px; position: absolute; left: -5px; top: -5px;"></iframe>',
                        main_content: '', test: '', summary: '<p>Binary search is a <b>faster</b> algorithm than linear
 search in general.  Its drawback is that it needs the <b>data to already be sorted/ordered</b> before searching.</p>')
-sub5 = Subtopic.create(title: 'Sorting Algorithms', intro: '', image: '/../app/assets/images/logo.jpg',
-                       game_class: '',
-                       game: '<iframe scrolling="no" sandbox="allow-popups allow-same-origin allow-scripts allow-top-navigation"
-              src="https://www.khanacademy.org/computer-programming/program/4869717459730432/embedded?embed=yes&amp;
-              author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D" class="perseus-scratchpad"
-              allow="fullscreen" style="height: 700px; width: 690px; position: absolute; left: -5px; top: -5px;">
-      </iframe>',
-                       main_content: '', test: '', summary: '')
+# sub5 = Subtopic.create(title: 'Sorting Algorithms', intro: '', image: '/../app/assets/images/logo.jpg',
+#                        game_class: '',
+#                        game: '<iframe scrolling="no" sandbox="allow-popups allow-same-origin allow-scripts allow-top-navigation"
+#               src="https://www.khanacademy.org/computer-programming/program/4869717459730432/embedded?embed=yes&amp;
+#               author=no&amp;editor=no&amp;width=688&amp;buttons=no&amp;settings=%7B%7D" class="perseus-scratchpad"
+#               allow="fullscreen" style="height: 700px; width: 690px; position: absolute; left: -5px; top: -5px;">
+#       </iframe>',
+#                        main_content: '', test: '', summary: '')
 
-t1.subtopics << [sub1, sub2, sub3, sub4, sub5]
+t1.subtopics << [sub1, sub2, sub3, sub4]
