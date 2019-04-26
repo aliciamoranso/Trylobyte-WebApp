@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ _Ruby version: 2.3.3
+ _Rails version: 5.1.6.1
+ 
 
-Things you may want to cover:
+_db creation & initialisation:
 
-* Ruby version
+rails db:migrate
+rails db:seed
 
-* System dependencies
 
-* Configuration
+_run in localhost (http://localhost:3000):
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails server
